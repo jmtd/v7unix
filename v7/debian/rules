@@ -1,8 +1,0 @@
-#!/usr/bin/make -f
-
-%:
-	dh $@ --parallel --with-sourcedirectory=usr/src/cmd/sed
-
-override_dh_auto_clean:
-	rm -f usr/src/cmd/sed/*.o bin/sed
-	dh_auto_clean --parallel
